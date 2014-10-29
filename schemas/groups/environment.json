@@ -11,19 +11,75 @@
         },
         "airPressure": {
             "description": "Current air pressure in kPa",
-            "$ref": "../definitions.json#/definitions/numberValue"
+            "type": "object",
+            "title": "airPressure",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "airTemp": {
             "description": "Current air temperature in degrees Centigrade",
-            "$ref": "../definitions.json#/definitions/numberValue"
+            "type": "object",
+            "title": "airTemp",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "currentDirection": {
             "description": "Direction of water current in degrees true",
-            "$ref": "../definitions.json#/definitions/numberValue"
+            "type": "object",
+            "title": "currentDirection",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "currentSpeed": {
             "description": "Speed of water current in m/s",
-            "$ref": "../definitions.json#/definitions/numberValue"
+            "type": "object",
+            "title": "currentSpeed",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "depth": {
             "title": "depth",
@@ -54,11 +110,39 @@
         },
         "humidity": {
             "description": "Current relative humidity as percentage",
-            "$ref": "../definitions.json#/definitions/numberValue"
+            "type": "object",
+            "title": "humidity",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "salinity": {
             "description": "Water salinity",
-            "$ref": "../definitions.json#/definitions/numberValue"
+            "type": "object",
+            "title": "salinity",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "tide": {
             "type": "object",
@@ -89,7 +173,21 @@
         },
         "waterTemp": {
             "description": "Current water temperature in degrees Centigrade",
-            "$ref": "../definitions.json#/definitions/numberValue"
+            "type": "object",
+            "title": "waterTemp",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "wind": {
             "type": "object",
