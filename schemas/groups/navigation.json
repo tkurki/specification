@@ -7,11 +7,39 @@
     "properties": {
         "courseOverGroundMagnetic": {
             "description": "",
-            "$ref": "../definitions.json#/definitions/numberValue"
+            "type": "object",
+            "title": "courseOverGroundMagnetic",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "courseOverGroundTrue": {
             "description": "",
-            "$ref": "../definitions.json#/definitions/numberValue"
+            "type": "object",
+            "title": "courseOverGroundTrue",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "currentRoute": {
             "type": "object",
@@ -81,8 +109,22 @@
             }
         },
         "magneticVariation": {
-            "$ref": "../definitions.json#/definitions/numberValue",
-            "description": "The magnetic variation (declination) at the current position"
+            "description": "The magnetic variation (declination) at the current position",
+            "type": "object",
+            "title": "magneticVariation",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "destination": {
             "title": "destination",
@@ -115,8 +157,22 @@
             }
         },
         "drift": {
-            "$ref": "../definitions.json#/definitions/numberValue",
-            "description": "The tidal drift at the current location in m/s"
+            "description": "The tidal drift at the current location in m/s",
+            "type": "object",
+            "title": "drift",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "gnss": {
             "type": "object",
@@ -162,12 +218,40 @@
             }
         },
         "headingMagnetic": {
-            "$ref": "../definitions.json#/definitions/numberValue",
-            "description": "Current magnetic heading of the vessels in degrees"
+            "description": "Current magnetic heading of the vessels in degrees",
+            "type": "object",
+            "title": "headingMagnetic",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "headingTrue": {
-            "$ref": "../definitions.json#/definitions/numberValue",
-            "description": "The current true heading of the vessel in degrees"
+            "description": "The current true heading of the vessel in degrees",
+            "type": "object",
+            "title": "headingTrue",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "position": {
             "type": "object",
@@ -197,28 +281,112 @@
             }
         },
         "pitch": {
-            "$ref": "../definitions.json#/definitions/numberValue",
-            "description": "Pitch in degrees, 0 is horizontal, +ve is bow up"
+            "description": "Pitch in degrees, 0 is horizontal, +ve is bow up",
+            "type": "object",
+            "title": "pitch",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "rateOfTurn": {
-            "$ref": "../definitions.json#/definitions/numberValue",
-            "description": "Rate of turn in degrees per second"
+            "description": "Rate of turn in degrees per second",
+            "type": "object",
+            "title": "rateOfTurn",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "roll": {
-            "$ref": "../definitions.json#/definitions/numberValue",
-            "description": "Vessel roll in degrees looking to the bow, level = 0, clockwise is +ve"
+            "description": "Vessel roll in degrees looking to the bow, level = 0, clockwise is +ve",
+            "type": "object",
+            "title": "roll",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "set": {
-            "$ref": "../definitions.json#/definitions/numberValue",
-            "description": "Tidal set in m/s"
+            "description": "Tidal set in m/s",
+            "type": "object",
+            "title": "set",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "speedOverGround": {
-            "$ref": "../definitions.json#/definitions/numberValue",
-            "description": "Vessel speed over ground, in m/s"
+            "description": "Vessel speed over ground, in m/s",
+            "type": "object",
+            "title": "speedOverGround",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "speedThroughWater": {
-            "$ref": "../definitions.json#/definitions/numberValue",
-            "description": "Vessel speed through the water in m/s"
+            "description": "Vessel speed through the water in m/s",
+            "type": "object",
+            "title": "speedThroughWater",
+            "properties": {
+                "value": {
+                    "$ref": "../definitions.json#/definitions/numberValue"
+                },
+                "source": {
+                    "description": "Source of this data",
+                    "$ref": "../definitions.json#/definitions/source"
+                },
+                "timestamp": {
+                    "description": "timestamp of the last update to this data",
+                    "$ref": "../definitions.json#/definitions/timestamp"
+                }
+            }
         },
         "state": {
             "type": "object",
