@@ -88,15 +88,51 @@
             "properties": {
                 "belowKeel": {
                     "description": "Depth below keel in meters",
-                    "$ref": "../definitions.json#/definitions/numberValue"
+                    "properties": {
+                        "value": {
+                            "$ref": "../definitions.json#/definitions/numberValue"
+                        },
+                        "source": {
+                            "description": "Source of this data",
+                            "$ref": "../definitions.json#/definitions/source"
+                        },
+                        "timestamp": {
+                            "description": "timestamp of the last update to this data",
+                            "$ref": "../definitions.json#/definitions/timestamp"
+                        }
+                    }
                 },
                 "belowTransducer": {
                     "description": "Depth below Transducer in meters",
-                    "$ref": "../definitions.json#/definitions/numberValue"
+                    "properties": {
+                        "value": {
+                            "$ref": "../definitions.json#/definitions/numberValue"
+                        },
+                        "source": {
+                            "description": "Source of this data",
+                            "$ref": "../definitions.json#/definitions/source"
+                        },
+                        "timestamp": {
+                            "description": "timestamp of the last update to this data",
+                            "$ref": "../definitions.json#/definitions/timestamp"
+                        }
+                    }
                 },
                 "belowSurface": {
                     "description": "Depth from surface in meters",
-                    "$ref": "../definitions.json#/definitions/numberValue"
+                    "properties": {
+                        "value": {
+                            "$ref": "../definitions.json#/definitions/numberValue"
+                        },
+                        "source": {
+                            "description": "Source of this data",
+                            "$ref": "../definitions.json#/definitions/source"
+                        },
+                        "timestamp": {
+                            "description": "timestamp of the last update to this data",
+                            "$ref": "../definitions.json#/definitions/timestamp"
+                        }
+                    }
                 },
                 "transducerToKeel": {
                     "description": "Depth in meters from the transducer to the bottom of the keel.",
@@ -196,23 +232,83 @@
             "properties": {
                 "angleApparent": {
                     "description": "Apparent wind angle, -180 to +180 degrees from the bow. Negative numbers to port.",
-                    "$ref": "../definitions.json#/definitions/numberValue"
+                    "properties": {
+                        "value": {
+                            "$ref": "../definitions.json#/definitions/numberValue"
+                        },
+                        "source": {
+                            "description": "Source of this data",
+                            "$ref": "../definitions.json#/definitions/source"
+                        },
+                        "timestamp": {
+                            "description": "timestamp of the last update to this data",
+                            "$ref": "../definitions.json#/definitions/timestamp"
+                        }
+                    }
                 },
                 "angleTrue": {
                     "description": "'True' wind angle, -180 to +180 degrees from the bow. Negative numbers to port.",
-                    "$ref": "../definitions.json#/definitions/numberValue"
+                    "properties": {
+                        "value": {
+                            "$ref": "../definitions.json#/definitions/numberValue"
+                        },
+                        "source": {
+                            "description": "Source of this data",
+                            "$ref": "../definitions.json#/definitions/source"
+                        },
+                        "timestamp": {
+                            "description": "timestamp of the last update to this data",
+                            "$ref": "../definitions.json#/definitions/timestamp"
+                        }
+                    }
                 },
                 "directionChangeAlarm": {
                     "description": "The number of degrees the wind needs to shift to raise an alarm",
-                    "$ref": "../definitions.json#/definitions/numberValue"
+                    "properties": {
+                        "value": {
+                            "$ref": "../definitions.json#/definitions/numberValue"
+                        },
+                        "source": {
+                            "description": "Source of this data",
+                            "$ref": "../definitions.json#/definitions/source"
+                        },
+                        "timestamp": {
+                            "description": "timestamp of the last update to this data",
+                            "$ref": "../definitions.json#/definitions/timestamp"
+                        }
+                    }
                 },
                 "directionTrue": {
                     "description": "The wind direction relative to true north, in compass degrees, 0 = North",
-                    "$ref": "../definitions.json#/definitions/numberValue"
+                    "properties": {
+                        "value": {
+                            "$ref": "../definitions.json#/definitions/numberValue"
+                        },
+                        "source": {
+                            "description": "Source of this data",
+                            "$ref": "../definitions.json#/definitions/source"
+                        },
+                        "timestamp": {
+                            "description": "timestamp of the last update to this data",
+                            "$ref": "../definitions.json#/definitions/timestamp"
+                        }
+                    }
                 },
                 "directionMagnetic": {
                     "description": "The wind direction relative to magnetic north, in compass degrees, 0 = North",
-                    "$ref": "../definitions.json#/definitions/numberValue"
+                    "properties": {
+                        "value": {
+                            "$ref": "../definitions.json#/definitions/numberValue"
+                        },
+                        "source": {
+                            "description": "Source of this data",
+                            "$ref": "../definitions.json#/definitions/source"
+                        },
+                        "timestamp": {
+                            "description": "timestamp of the last update to this data",
+                            "$ref": "../definitions.json#/definitions/timestamp"
+                        }
+                    }
                 },
                 "speedAlarm": {
                     "description": "The speed in m/s above which a wind alarm will be raised",
@@ -220,11 +316,35 @@
                 },
                 "speedTrue": {
                     "description": "True wind speed in m/s",
-                    "$ref": "../definitions.json#/definitions/numberValue"
+                    "properties": {
+                        "value": {
+                            "$ref": "../definitions.json#/definitions/numberValue"
+                        },
+                        "source": {
+                            "description": "Source of this data",
+                            "$ref": "../definitions.json#/definitions/source"
+                        },
+                        "timestamp": {
+                            "description": "timestamp of the last update to this data",
+                            "$ref": "../definitions.json#/definitions/timestamp"
+                        }
+                    }
                 },
                 "speedApparent": {
                     "description": "Apparent wind speed in m/s",
-                    "$ref": "../definitions.json#/definitions/numberValue"
+                    "properties": {
+                        "value": {
+                            "$ref": "../definitions.json#/definitions/numberValue"
+                        },
+                        "source": {
+                            "description": "Source of this data",
+                            "$ref": "../definitions.json#/definitions/source"
+                        },
+                        "timestamp": {
+                            "description": "timestamp of the last update to this data",
+                            "$ref": "../definitions.json#/definitions/timestamp"
+                        }
+                    }
                 }
             }
         },
