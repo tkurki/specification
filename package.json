@@ -6,8 +6,8 @@
   "scripts": {
     "test": "mocha",
     "build": "scripts/extractKeysAndMeta.js >$TMPDIR/keyswithmetadata.json && mv $TMPDIR/keyswithmetadata.json keyswithmetadata.json",
-    "docs:build": "gitbook build gitbook-docs v1",
-    "docs:publish": "npm run docs:build && git checkout gh-pages && git add v1 && git commit --allow-empty -m 'Update docs' && git push git@github.com:tkurki/specification gh-pages"
+    "docs:build": "gitbook build gitbook-docs master",
+    "docs:publish": "npm run docs:build && git checkout gh-pages && git add master && git commit --allow-empty -m 'Update docs' && git push git@github.com:signalk/specification gh-pages"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,7 @@
     "tv4": "^1.2.7"
   },
   "devDependencies": {
+    "gitbook-cli": "^2.3.0",
     "mocha": "^2.1.0"
   }
 }
